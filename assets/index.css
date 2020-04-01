@@ -1,0 +1,61 @@
+html{
+    margin: 0;
+    box-sizing: content-box;
+}
+
+header{
+    height: 7vw;
+    margin: .5vw;
+    margin-left: .1vw;
+    width: 97.7vw;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vw;
+    width: 37vw;
+    background-color:rgb(194, 193, 197);
+}
+
+.navbar button{
+    text-decoration: none;
+    margin-left: .5vw;
+    margin-right: .5vw ;
+    height: 6vw;
+}
+
+#viewport{
+    border: 1vw solid rgb(194, 193, 197);
+}
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+}
+
+.gallery-container div{
+    box-sizing: content-box;
+    flex: 25%;
+    padding: .5%;  
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:1024px){
+    .gallery-container div{
+        flex: 46%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .gallery-container div{
+        flex: 98%;
+    }
+}
